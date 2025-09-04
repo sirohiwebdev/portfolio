@@ -8,7 +8,7 @@ import TypewriterText from './TypewriterText';
 
 const Hero = () => {
   return (
-    <section className="hero-section relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="hero-section relative h-screen flex flex-col justify-center overflow-hidden">
       {/* Background Elements */}
       <div className="hero-background absolute inset-0 bg-gradient-to-br from-bg-primary to-bg-secondary">
         <div className="absolute inset-0 w-full h-full">
@@ -17,12 +17,12 @@ const Hero = () => {
         <div className="grid-overlay absolute inset-0 bg-grid-pattern opacity-10"></div>
       </div>
       
-      <div className="hero-content container mx-auto px-4 relative z-10">
+      <div className="hero-content container mx-auto px-4 relative z-10 flex-1 flex flex-col justify-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-center"
+          className="text-center flex-1 flex flex-col justify-center"
         >
           {/* Glitch Text Effect */}
           <div className="glitch-text">
@@ -116,7 +116,7 @@ const Hero = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1.2 }}
-            className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+            className="absolute bottom-8 left-1/2 -translate-x-1/2 will-change-transform"
           >
             <div className="w-6 h-10 rounded-full border-2 border-text-secondary p-1">
               <div className="w-1.5 h-1.5 bg-text-secondary rounded-full mx-auto animate-bounce" />
