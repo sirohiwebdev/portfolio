@@ -1,26 +1,92 @@
-@import "tailwindcss";
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+::selection {
+  background-color: rgba(0, 255, 133, 0.3);
+  color: #E5E7EB;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+::-webkit-scrollbar {
+  width: 0.5rem;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+::-webkit-scrollbar-track {
+  background: #1A1A1A;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #242424;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 255, 133, 0.5);
+  transition: background-color 0.3s;
+}
+
+.glass-container {
+  background: rgba(26, 26, 26, 0.3);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(36, 36, 36, 0.5);
+  border-radius: 0.75rem;
+}
+
+.btn-primary {
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  background: linear-gradient(to right, #00FF85, #00FFFF);
+  color: #0D0D0D;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  box-shadow: 0 0 20px rgba(0, 255, 133, 0.4);
+  transform: translateY(-2px);
+}
+
+.section-title {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-family: var(--font-orbitron);
+  font-weight: 700;
+  background: linear-gradient(to right, #00FF85, #00FFFF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+@media (min-width: 768px) {
+  .section-title {
+    font-size: 2.5rem;
+    line-height: 3rem;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.hero-title {
+  animation: titlePulse 3s ease-in-out infinite;
+}
+
+.typewriter {
+  border-right: 2px solid #00FF85;
+  animation: cursor 1s step-end infinite;
+}
+
+@keyframes cursor {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #00FF85;
+  }
+}
+
+@keyframes titlePulse {
+  0%, 100% {
+    text-shadow: 0 0 20px #00FF85;
+  }
+  50% {
+    text-shadow: 0 0 30px #00FFFF;
+  }
 }
