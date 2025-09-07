@@ -40,7 +40,7 @@ const Hero = () => {
           {/* Role Animation */}
           <div className="role-animated font-mono text-xl md:text-2xl text-text-primary mb-8">
             <TypewriterText 
-              text="Lead Software Engineer | Graph Database Expert | Cloud Security Specialist"
+              text="Building Next-Gen Cloud Security | Graph Systems Architect | Distributed Systems Expert"
               delay={50}
               className="typewriter"
             />
@@ -76,7 +76,7 @@ const Hero = () => {
               View Projects
             </a>
             <a
-              href="/resume.pdf"
+              href="/Abhishek-Sirohi-Resume-2025.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-secondary flex items-center justify-center gap-2 px-6 py-3 rounded-full border-2 border-accent-primary text-accent-primary font-medium hover:bg-accent-primary/10 transition-all hover:scale-105"
