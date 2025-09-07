@@ -1,30 +1,35 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import Link from "next/link";
+import { FaGithub, FaLinkedin, FaMedium } from "react-icons/fa";
 
 const navigation = {
   sections: [
-    { name: 'About', href: '#about' },
-    { name: 'Skills', href: '#skills' },
-    { name: 'Projects', href: '#projects' },
-    { name: 'Education', href: '#education' },
-    { name: 'Achievements', href: '#achievements' },
-    { name: 'Experience', href: '#experience' },
-    { name: 'Contact', href: '#contact' }
+    { name: "About", href: "#about" },
+    { name: "Skills", href: "#skills" },
+    { name: "Projects", href: "#projects" },
+    { name: "Education", href: "#education" },
+    { name: "Achievements", href: "#achievements" },
+    { name: "Experience", href: "#experience" },
+    { name: "Contact", href: "#contact" },
   ],
   social: [
     {
-      name: 'LinkedIn',
-      href: 'https://www.linkedin.com/in/sirohiwebdev/',
-      icon: FaLinkedin
+      name: "LinkedIn",
+      href: "https://www.linkedin.com/in/sirohiwebdev/",
+      icon: FaLinkedin,
     },
     {
-      name: 'GitHub',
-      href: 'https://github.com/sirohiwebdev',
-      icon: FaGithub
-    }
-  ]
+      name: "GitHub",
+      href: "https://github.com/sirohiwebdev",
+      icon: FaGithub,
+    },
+    {
+      name: "Medium",
+      href: "https://journal.abhisheksirohi.com/",
+      icon: FaMedium,
+    },
+  ],
 };
 
 const Footer = () => {
@@ -39,8 +44,8 @@ const Footer = () => {
               Abhishek Sirohi
             </h3>
             <p className="text-text-secondary mb-6 max-w-md">
-              Lead Software Engineer specializing in cloud security, distributed systems, 
-              and graph database technologies.
+              Lead Software Engineer specializing in cloud security, distributed
+              systems, and graph database technologies.
             </p>
             <div className="flex space-x-4">
               {navigation.social.map((item) => (
@@ -107,14 +112,15 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="pt-8 text-center text-text-secondary">
           <p className="text-sm">
-            &copy; {new Date().getFullYear()} Abhishek Sirohi. All rights reserved.
+            &copy; {new Date().getFullYear()} Abhishek Sirohi. All rights
+            reserved.
           </p>
         </div>
       </div>
 
       {/* Scroll to Top Button */}
       <button
-        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
         className="fixed bottom-8 right-8 w-12 h-12 rounded-lg bg-accent-primary text-bg-primary flex items-center justify-center hover:bg-accent-tertiary transition-colors focus:outline-none focus:ring-2 focus:ring-accent-primary focus:ring-offset-2 focus:ring-offset-bg-tertiary"
       >
         <svg

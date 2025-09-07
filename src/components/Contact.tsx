@@ -1,7 +1,14 @@
-'use client';
+"use client";
 
-import { motion } from 'framer-motion';
-import { FaEnvelope, FaGithub, FaLinkedin, FaMapMarkerAlt, FaPhone } from 'react-icons/fa';
+import { motion } from "framer-motion";
+import {
+  FaEnvelope,
+  FaGithub,
+  FaLinkedin,
+  FaMapMarkerAlt,
+  FaMedium,
+  FaPhone,
+} from "react-icons/fa";
 
 interface ContactInfo {
   email: string;
@@ -11,6 +18,7 @@ interface ContactInfo {
     linkedin: string;
     github: string;
     website: string;
+    medium: string;
   };
 }
 
@@ -21,8 +29,9 @@ const contactInfo: ContactInfo = {
   links: {
     linkedin: "https://www.linkedin.com/in/sirohiwebdev/",
     github: "https://github.com/sirohiwebdev",
-    website: "https://abhisheksirohi.com"
-  }
+    website: "https://abhisheksirohi.com",
+    medium: "https://journal.abhisheksirohi.com/",
+  },
 };
 
 const Contact = () => {
@@ -42,7 +51,8 @@ const Contact = () => {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-accent-primary to-accent-secondary mx-auto mt-4"></div>
           <p className="text-text-secondary mt-6 max-w-2xl mx-auto">
-            Ready to collaborate on exciting projects or discuss technology innovations? Let&apos;s connect!
+            Ready to collaborate on exciting projects or discuss technology
+            innovations? Let&apos;s connect!
           </p>
         </motion.div>
 
@@ -88,7 +98,7 @@ const Contact = () => {
                     {contactInfo.phone.map((number) => (
                       <a
                         key={number}
-                        href={`tel:${number.replace(/\s+/g, '')}`}
+                        href={`tel:${number.replace(/\s+/g, "")}`}
                         className="block text-accent-primary hover:text-accent-tertiary transition-colors"
                       >
                         {number}
@@ -104,7 +114,9 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="text-text-secondary mb-1">Location</p>
-                    <p className="text-accent-primary">{contactInfo.location}</p>
+                    <p className="text-accent-primary">
+                      {contactInfo.location}
+                    </p>
                   </div>
                 </div>
               </div>
@@ -131,6 +143,14 @@ const Contact = () => {
                   >
                     <FaGithub className="text-2xl" />
                   </a>
+                  <a
+                    href={contactInfo.links.medium}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-12 h-12 rounded-lg bg-accent-primary/10 flex items-center justify-center text-accent-primary hover:bg-accent-primary/20 transition-colors"
+                  >
+                    <FaMedium className="text-2xl" />
+                  </a>
                 </div>
               </div>
             </motion.div>
@@ -149,7 +169,10 @@ const Contact = () => {
 
               <form className="space-y-6">
                 <div>
-                  <label htmlFor="name" className="block text-text-secondary mb-2">
+                  <label
+                    htmlFor="name"
+                    className="block text-text-secondary mb-2"
+                  >
                     Name
                   </label>
                   <input
@@ -162,7 +185,10 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <label htmlFor="email" className="block text-text-secondary mb-2">
+                  <label
+                    htmlFor="email"
+                    className="block text-text-secondary mb-2"
+                  >
                     Email
                   </label>
                   <input
@@ -175,7 +201,10 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <label htmlFor="subject" className="block text-text-secondary mb-2">
+                  <label
+                    htmlFor="subject"
+                    className="block text-text-secondary mb-2"
+                  >
                     Subject
                   </label>
                   <input
@@ -188,7 +217,10 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-text-secondary mb-2">
+                  <label
+                    htmlFor="message"
+                    className="block text-text-secondary mb-2"
+                  >
                     Message
                   </label>
                   <textarea
@@ -224,7 +256,10 @@ const Contact = () => {
             <ul className="text-text-secondary space-y-2">
               <li>Open to consulting opportunities</li>
               <li>Available for technical discussions</li>
-              <li>Interested in collaborative projects in cloud security, distributed systems, and graph technologies</li>
+              <li>
+                Interested in collaborative projects in cloud security,
+                distributed systems, and graph technologies
+              </li>
             </ul>
             <p className="mt-4 text-accent-primary font-medium">
               Response Time: Less than 24 hours
