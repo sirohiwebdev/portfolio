@@ -5,37 +5,39 @@
 ### Color Palette - Dark Futuristic Theme
 
 #### Primary Colors
+
 ```css
 :root {
   /* Background Colors */
-  --bg-primary: #0D0D0D;        /* Deep black base */
-  --bg-secondary: #1A1A1A;      /* Rich black sections */
-  --bg-tertiary: #242424;       /* Soft black cards */
+  --bg-primary: #0d0d0d; /* Deep black base */
+  --bg-secondary: #1a1a1a; /* Rich black sections */
+  --bg-tertiary: #242424; /* Soft black cards */
   --bg-glass: rgba(26, 26, 26, 0.8); /* Glass morphism */
-  
+
   /* Text Colors */
-  --text-primary: #E5E7EB;      /* Light gray primary text */
-  --text-secondary: #9CA3AF;    /* Medium gray secondary */
-  --text-muted: #6B7280;        /* Subtle text */
-  
+  --text-primary: #e5e7eb; /* Light gray primary text */
+  --text-secondary: #9ca3af; /* Medium gray secondary */
+  --text-muted: #6b7280; /* Subtle text */
+
   /* Accent Colors - Neon Highlights */
-  --accent-primary: #00FF85;     /* Neon green - primary CTA */
-  --accent-secondary: #1E90FF;   /* Electric blue - links */
-  --accent-tertiary: #FF0099;    /* Vivid pink - hover states */
-  --accent-gold: #FFD700;        /* Gold - achievements */
-  --accent-cyan: #00FFFF;        /* Cyan - tech highlights */
-  
+  --accent-primary: #00ff85; /* Neon green - primary CTA */
+  --accent-secondary: #1e90ff; /* Electric blue - links */
+  --accent-tertiary: #ff0099; /* Vivid pink - hover states */
+  --accent-gold: #ffd700; /* Gold - achievements */
+  --accent-cyan: #00ffff; /* Cyan - tech highlights */
+
   /* Graph/Data Colors */
-  --graph-node: #4ADE80;         /* Graph visualization */
-  --graph-edge: #3B82F6;         /* Connections */
-  --code-bg: #111827;            /* Code block background */
-  --code-border: #374151;        /* Code borders */
+  --graph-node: #4ade80; /* Graph visualization */
+  --graph-edge: #3b82f6; /* Connections */
+  --code-bg: #111827; /* Code block background */
+  --code-border: #374151; /* Code borders */
 }
 ```
 
 ### Typography System - Futuristic & Energetic
 
 #### Primary Font Stack
+
 ```css
 /* Heading Font - Futuristic Display */
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap');
@@ -52,21 +54,21 @@
   --size-hero: clamp(3rem, 8vw, 6rem);
   --weight-hero: 900;
   --spacing-hero: -0.02em;
-  
+
   /* Section Headings */
   --font-heading: 'Orbitron', system-ui, sans-serif;
   --size-h1: clamp(2.5rem, 5vw, 4rem);
   --size-h2: clamp(2rem, 4vw, 3rem);
   --size-h3: clamp(1.5rem, 3vw, 2rem);
   --weight-heading: 700;
-  
+
   /* Body Text */
   --font-body: 'Inter', system-ui, sans-serif;
   --size-body: clamp(1rem, 2vw, 1.125rem);
   --size-small: clamp(0.875rem, 1.5vw, 1rem);
   --line-height: 1.7;
   --weight-body: 400;
-  
+
   /* Code & Tech Text */
   --font-mono: 'JetBrains Mono', 'Courier New', monospace;
   --size-code: clamp(0.875rem, 1.5vw, 1rem);
@@ -78,6 +80,7 @@
 ## HERO SECTION - Landing Area
 
 ### Design Elements
+
 ```html
 <section class="hero-section">
   <div class="hero-background">
@@ -85,27 +88,31 @@
     <div class="particle-system"></div>
     <div class="grid-overlay"></div>
   </div>
-  
+
   <div class="hero-content">
     <div class="glitch-text">
       <h1 class="hero-title">ABHISHEK SIROHI</h1>
     </div>
-    
+
     <div class="role-animated">
-      <span class="typewriter">Lead Software Engineer | Graph Database Expert | Cloud Security Specialist</span>
+      <span class="typewriter"
+        >Lead Software Engineer | Graph Database Expert | Cloud Security Specialist</span
+      >
     </div>
-    
+
     <div class="hero-description">
-      <p class="fade-in">Pioneering the future of cloud security with <span class="highlight">JanusGraph</span> 
-      and <span class="highlight">distributed systems</span>. Currently leading innovation at 
-      <span class="accent-brand">Qualys</span>.</p>
+      <p class="fade-in">
+        Pioneering the future of cloud security with <span class="highlight">JanusGraph</span> and
+        <span class="highlight">distributed systems</span>. Currently leading innovation at
+        <span class="accent-brand">Qualys</span>.
+      </p>
     </div>
-    
+
     <div class="cta-buttons">
       <button class="btn-primary neon-glow">View Projects</button>
       <button class="btn-secondary glass-effect">Download Resume</button>
     </div>
-    
+
     <div class="social-links floating">
       <!-- Animated social icons -->
     </div>
@@ -114,6 +121,7 @@
 ```
 
 ### CSS Styling
+
 ```css
 .hero-section {
   min-height: 100vh;
@@ -137,7 +145,9 @@
 
 .typewriter {
   border-right: 2px solid var(--accent-primary);
-  animation: typing 4s steps(50) infinite, blink 1s infinite;
+  animation:
+    typing 4s steps(50) infinite,
+    blink 1s infinite;
 }
 
 .btn-primary {
@@ -173,6 +183,7 @@
 ## ABOUT SECTION - Professional Story
 
 ### Design Layout
+
 ```html
 <section class="about-section glass-container">
   <div class="section-header">
@@ -182,33 +193,39 @@
       <div class="title-underline"></div>
     </h2>
   </div>
-  
+
   <div class="about-grid">
     <div class="about-text">
       <div class="text-block fade-up">
-        <p class="lead-text">I'm a passionate <span class="highlight">Lead Software Engineer</span> 
-        who thrives on building scalable, enterprise-grade solutions that make a real-world impact.</p>
-        
-        <p>With over <span class="accent-number">5+</span> years in the industry, I've evolved from a 
-        full-stack developer to a technical leader specializing in 
-        <span class="tech-highlight">cloud security</span>, 
-        <span class="tech-highlight">distributed systems</span>, and 
-        <span class="tech-highlight">graph database technologies</span>.</p>
-        
-        <p>Currently, I lead the <span class="highlight">graph development team at Qualys</span>, 
-        where I'm spearheading the development of the company's first 
-        <span class="accent-brand">Graph DB (JanusGraph)</span> based inventory collection 
-        and rule-evaluation engine.</p>
+        <p class="lead-text">
+          I'm a passionate <span class="highlight">Lead Software Engineer</span> who thrives on
+          building scalable, enterprise-grade solutions that make a real-world impact.
+        </p>
+
+        <p>
+          With over <span class="accent-number">5+</span> years in the industry, I've evolved from a
+          full-stack developer to a technical leader specializing in
+          <span class="tech-highlight">cloud security</span>,
+          <span class="tech-highlight">distributed systems</span>, and
+          <span class="tech-highlight">graph database technologies</span>.
+        </p>
+
+        <p>
+          Currently, I lead the <span class="highlight">graph development team at Qualys</span>,
+          where I'm spearheading the development of the company's first
+          <span class="accent-brand">Graph DB (JanusGraph)</span> based inventory collection and
+          rule-evaluation engine.
+        </p>
       </div>
     </div>
-    
+
     <div class="about-visual">
       <div class="profile-card hologram-effect">
         <div class="avatar-container">
-          <img src="abhishek-profile.jpg" alt="Abhishek Sirohi" class="profile-image"/>
+          <img src="abhishek-profile.jpg" alt="Abhishek Sirohi" class="profile-image" />
           <div class="avatar-glow"></div>
         </div>
-        
+
         <div class="stats-grid">
           <div class="stat-item">
             <span class="stat-number" data-count="5">0</span>
@@ -248,12 +265,14 @@ When I'm not coding, you'll find me on the football field, exploring new technol
 ## SKILLS SECTION - Technical Arsenal
 
 ### Core Technologies
+
 - **Languages:** JavaScript, TypeScript, Java, Python, SQL
 - **Frontend:** ReactJS, NextJS, HTML5, CSS3, Bootstrap
 - **Backend:** Node.js, Express.js, Spring Boot, RESTful APIs
 - **Databases:** JanusGraph, MongoDB, DynamoDB, Oracle, Redis, MySQL
 
 ### Cloud & DevOps
+
 - **Cloud Platforms:** AWS (EC2, S3, Lambda, CloudFormation), GCP, Azure
 - **Containerization:** Docker, Kubernetes, Container Orchestration
 - **CI/CD:** Jenkins, GitHub Actions, DevOps Pipelines
@@ -261,17 +280,20 @@ When I'm not coding, you'll find me on the football field, exploring new technol
 - **Monitoring:** Grafana, Prometheus, Elasticsearch
 
 ### Specialized Technologies
+
 - **Graph Databases:** JanusGraph, Gremlin Query Language, Apache TinkerPop
 - **Message Streaming:** Apache Kafka, Event-Driven Architecture
 - **Low-Code Platforms:** Node-RED, Visual Programming
 - **Security:** Cloud Security, Vulnerability Management, Compliance
 
 ### Data & Analytics
+
 - **Data Science:** Basic Machine Learning, Data Analysis
 - **AI/ML:** Prompt Engineering, AI-Driven Development, MCP Servers
 - **Big Data:** Data Pipeline Architecture, ETL Processes
 
 ### Development Practices
+
 - **Methodologies:** Agile, Scrum, Test-Driven Development
 - **Architecture:** System Design, Microservices, Distributed Systems
 - **Version Control:** Git, GitHub, Code Review Best Practices
@@ -281,7 +303,8 @@ When I'm not coding, you'll find me on the football field, exploring new technol
 ## EXPERIENCE SECTION - Professional Journey
 
 ### Lead Software Engineer | Qualys
-*June 2025 - Present â€¢ Pune, Maharashtra*
+
+_June 2025 - Present â€¢ Pune, Maharashtra_
 
 **Key Responsibilities:**
 
@@ -294,9 +317,11 @@ When I'm not coding, you'll find me on the football field, exploring new technol
 **Technologies:** JanusGraph, Apache Kafka, Redis, Kubernetes, Node.js, AWS, GCP, Oracle DB
 
 ### Senior Software Engineer | Qualys
-*June 2023 - June 2025 â€¢ Pune, Maharashtra*
+
+_June 2023 - June 2025 â€¢ Pune, Maharashtra_
 
 **Key Achievements:**
+
 - Designed & developed performance-enhancing features for QFlow module, improving platform efficiency by 40%
 - Developed No Code - Low Code platform using Node-RED for cloud resource scanning and attack path generation
 - Led code review initiatives and productivity programs, mentoring junior developers
@@ -306,9 +331,11 @@ When I'm not coding, you'll find me on the football field, exploring new technol
 **Technologies:** Node-RED, React, Node.js, Kafka, AWS, Docker, Event-Driven Architecture
 
 ### Software Engineer | Qualys
-*August 2021 - May 2023 â€¢ Pune, Maharashtra*
+
+_August 2021 - May 2023 â€¢ Pune, Maharashtra_
 
 **Key Contributions:**
+
 - Built full-stack solutions in Cloud Security domain, tackling complex automation and compliance challenges
 - Designed event-based trigger systems empowering Qualys Scan for enterprise customers
 - Improved system performance and throughput by 50% through optimization and monitoring
@@ -318,10 +345,12 @@ When I'm not coding, you'll find me on the football field, exploring new technol
 **Technologies:** React, Node.js, AWS, JavaScript, TypeScript, Cloud APIs
 
 ### Software Developer | Kandor Soft Labs (TotalCloud Inc.)
-*August 2020 - August 2021 â€¢ Bengaluru, Karnataka*
-*Acquired by Qualys*
+
+_August 2020 - August 2021 â€¢ Bengaluru, Karnataka_
+_Acquired by Qualys_
 
 **Key Responsibilities:**
+
 - Full-stack developer on TotalCloud platform, focusing on product design and user experience
 - Enhanced user experience and platform functionality
 - Contributed to platform architecture that formed foundation of Qualys TotalCloud suite
@@ -334,11 +363,13 @@ When I'm not coding, you'll find me on the football field, exploring new technol
 ## PROJECTS SECTION - Featured Projects
 
 ### Cloud Graph Inventory Management Platform
+
 **Role:** Lead Developer & Architect
 
 Revolutionary distributed low-code/no-code platform that transforms how enterprises manage and visualize their cloud security posture. Built using Node-RED for visual programming, the system powers inventory data ingestion into a JanusGraph-backed system.
 
 **Key Features:**
+
 - Real-time inventory collection from AWS, GCP, and Azure cloud environments
 - Attack path visualization using advanced graph algorithms and security policies
 - Natural language querying through MCP (Model Context Protocol) servers
@@ -349,11 +380,13 @@ Revolutionary distributed low-code/no-code platform that transforms how enterpri
 **Impact:** Enabled security teams to identify and remediate attack paths 10x faster than traditional methods
 
 ### QFlow - Distributed Workflow Orchestration Engine
+
 **Role:** Senior Developer
 
 Enterprise-grade workflow orchestration platform that allows users to create and execute complex cloud management workflows through an intuitive visual interface.
 
 **Key Features:**
+
 - Drag-and-drop workflow builder for creating custom security automations
 - Event-driven architecture supporting real-time cloud resource monitoring
 - Integration capabilities with major cloud providers and ITSM tools
@@ -364,11 +397,13 @@ Enterprise-grade workflow orchestration platform that allows users to create and
 **Impact:** Reduced manual security operations overhead by 60% for enterprise customers
 
 ### Gurukul Vishwabharti School Website
+
 **Role:** Freelance Full-Stack Developer
 
 Comprehensive educational website for a CBSE-affiliated school in Haryana, featuring modern design and administrative functionality.
 
 **Key Features:**
+
 - Responsive design optimized for all devices
 - Content management system for news, admissions, and academic information
 - Student information portal with secure authentication
@@ -383,16 +418,18 @@ Comprehensive educational website for a CBSE-affiliated school in Haryana, featu
 ## EDUCATION SECTION
 
 ### Bachelor of Technology - Computer Science & Engineering
-**Rajkiya Engineering College Kannauj** | *August 2016 - June 2020*  
-*Kannauj, Uttar Pradesh*
+
+**Rajkiya Engineering College Kannauj** | _August 2016 - June 2020_  
+_Kannauj, Uttar Pradesh_
 
 - **CGPA:** 7.2/10.0
 - **Relevant Coursework:** Data Structures & Algorithms, Database Management Systems, Computer Networks, Software Engineering, Operating Systems
 - **Projects:** Multiple academic projects involving web development, database design, and system programming
 
 ### Higher Secondary (10+2) - Science
-**Meerut Public School** | *April 2014 - March 2015*  
-*Meerut, Uttar Pradesh*
+
+**Meerut Public School** | _April 2014 - March 2015_  
+_Meerut, Uttar Pradesh_
 
 - **Percentage:** 91.3%
 - **Subjects:** Physics, Chemistry, Mathematics, English
@@ -402,18 +439,21 @@ Comprehensive educational website for a CBSE-affiliated school in Haryana, featu
 ## LEADERSHIP & ACHIEVEMENTS
 
 ### Professional Achievements
+
 - Released the first-ever Graph DB based inventory system at Qualys, processing billions of cloud assets
 - Led a team of 5+ engineers in developing cutting-edge cloud security solutions
 - Improved system performance metrics by 40-60% across multiple projects
 - Recognized for technical leadership and innovation in cloud security domain
 
 ### Academic & Personal Achievements
+
 - Awarded "Most Dynamic Student" in college for leadership and technical contributions
 - Scored perfect CGPA of 10/10 in 10th board examinations
 - Won Inter-college Football Tournament consecutively in 2019 and 2020
 - Led technical teams and events as Assistant Coordinator at Unnat Technical Club
 
 ### Leadership Roles
+
 - **Assistant Coordinator** - Unnat Technical Club, RECK (Jan 2018 - Jun 2020)
 - **Technical Secretary** - Abhyutthan 2018 (Annual Techno-cultural fest)
 - **Team Captain** - College Football Team (2019-2020)
@@ -427,16 +467,19 @@ Comprehensive educational website for a CBSE-affiliated school in Haryana, featu
 Ready to collaborate on exciting projects or discuss technology innovations? Let's connect!
 
 **Contact Information:**
+
 - **Email:** abhisheksiroh19@gmail.com
 - **Phone:** +91 7880329858, +91 9759781207
 - **Location:** Pune, Maharashtra, India
 
 **Professional Links:**
+
 - **LinkedIn:** https://www.linkedin.com/in/sirohiwebdev/
 - **GitHub:** https://github.com/sirohiwebdev
 - **Website:** https://abhisheksirohi.com
 
 **Availability:**
+
 - Open to consulting opportunities
 - Available for technical discussions
 - Interested in collaborative projects in cloud security, distributed systems, and graph technologies
@@ -448,60 +491,107 @@ Ready to collaborate on exciting projects or discuss technology innovations? Let
 ## CSS ANIMATIONS & INTERACTIONS
 
 ### Keyframe Animations
+
 ```css
 /* Title Pulse Animation */
 @keyframes titlePulse {
-  0%, 100% { text-shadow: 0 0 20px rgba(0, 255, 133, 0.5); }
-  50% { text-shadow: 0 0 40px rgba(0, 255, 133, 0.8); }
+  0%,
+  100% {
+    text-shadow: 0 0 20px rgba(0, 255, 133, 0.5);
+  }
+  50% {
+    text-shadow: 0 0 40px rgba(0, 255, 133, 0.8);
+  }
 }
 
 /* Typewriter Effect */
 @keyframes typing {
-  from { width: 0; }
-  to { width: 100%; }
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 @keyframes blink {
-  0%, 50% { border-color: var(--accent-primary); }
-  51%, 100% { border-color: transparent; }
+  0%,
+  50% {
+    border-color: var(--accent-primary);
+  }
+  51%,
+  100% {
+    border-color: transparent;
+  }
 }
 
 /* Particle Float Animation */
 @keyframes particleFloat {
-  0% { transform: translateY(0px) rotate(0deg); }
-  33% { transform: translateY(-10px) rotate(120deg); }
-  66% { transform: translateY(5px) rotate(240deg); }
-  100% { transform: translateY(0px) rotate(360deg); }
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  33% {
+    transform: translateY(-10px) rotate(120deg);
+  }
+  66% {
+    transform: translateY(5px) rotate(240deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(360deg);
+  }
 }
 
 /* Holographic Scan Line */
 @keyframes scanLine {
-  0% { left: -100%; }
-  100% { left: 100%; }
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
 }
 
 /* Border Glow Animation */
 @keyframes borderGlow {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 /* Progress Bar Fill */
 @keyframes progressFill {
-  from { width: 0%; }
-  to { width: var(--progress); }
+  from {
+    width: 0%;
+  }
+  to {
+    width: var(--progress);
+  }
 }
 
 /* Skill Shine Effect */
 @keyframes skillShine {
-  0% { transform: translateX(-20px); opacity: 0; }
-  50% { opacity: 1; }
-  100% { transform: translateX(0px); opacity: 0; }
+  0% {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 0;
+  }
 }
 ```
 
 ### Interaction States
+
 ```css
 .interactive-hover {
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -538,6 +628,7 @@ Ready to collaborate on exciting projects or discuss technology innovations? Let
 ## RESPONSIVE DESIGN BREAKPOINTS
 
 ### Mobile-First Approach
+
 ```css
 /* Mobile First */
 .container {
@@ -552,11 +643,11 @@ Ready to collaborate on exciting projects or discuss technology innovations? Let
     margin: 0 auto;
     padding: 0 30px;
   }
-  
+
   .hero-title {
     font-size: clamp(2.5rem, 6vw, 4rem);
   }
-  
+
   .projects-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -568,11 +659,11 @@ Ready to collaborate on exciting projects or discuss technology innovations? Let
     max-width: 1200px;
     padding: 0 40px;
   }
-  
+
   .skills-container {
     grid-template-columns: repeat(3, 1fr);
   }
-  
+
   .about-grid {
     grid-template-columns: 1.5fr 1fr;
     gap: 60px;
@@ -584,11 +675,11 @@ Ready to collaborate on exciting projects or discuss technology innovations? Let
   .container {
     max-width: 1400px;
   }
-  
+
   .hero-title {
     font-size: 6rem;
   }
-  
+
   .projects-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 60px;
@@ -601,17 +692,27 @@ Ready to collaborate on exciting projects or discuss technology innovations? Let
 ## PERFORMANCE & ACCESSIBILITY
 
 ### Loading States & Performance
+
 ```css
 /* Loading Animation */
 .loading-state {
-  background: linear-gradient(90deg, var(--bg-tertiary) 25%, var(--bg-secondary) 50%, var(--bg-tertiary) 75%);
+  background: linear-gradient(
+    90deg,
+    var(--bg-tertiary) 25%,
+    var(--bg-secondary) 50%,
+    var(--bg-tertiary) 75%
+  );
   background-size: 200% 100%;
   animation: loading-shimmer 2s infinite;
 }
 
 @keyframes loading-shimmer {
-  0% { background-position: -200% 0; }
-  100% { background-position: 200% 0; }
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
 }
 
 /* Accessibility */
@@ -648,6 +749,7 @@ Ready to collaborate on exciting projects or discuss technology innovations? Let
 ## IMPLEMENTATION CHECKLIST
 
 ### Essential Features
+
 - [x] Dark theme with neon accents
 - [x] Futuristic typography (Orbitron + Inter + JetBrains Mono)
 - [x] Animated particles/grid background
@@ -660,6 +762,7 @@ Ready to collaborate on exciting projects or discuss technology innovations? Let
 - [x] Social media integration
 
 ### Performance Optimizations
+
 - [x] Lazy loading for images
 - [x] CSS animations over JavaScript
 - [x] Optimized font loading

@@ -1,10 +1,10 @@
-"use client";
+'use client';
 
-import { motion } from "framer-motion";
-import { FaDownload, FaGithub, FaLinkedin, FaMedium } from "react-icons/fa";
-import { MdWork } from "react-icons/md";
-import ParticleBackground from "./ParticleBackground";
-import TypewriterText from "./TypewriterText";
+import { motion } from 'framer-motion';
+import { FaDownload, FaGithub, FaLinkedin, FaMedium } from 'react-icons/fa';
+import { MdWork } from 'react-icons/md';
+import ParticleBackground from './ParticleBackground';
+import TypewriterText from './TypewriterText';
 
 const Hero = () => {
   return (
@@ -29,8 +29,8 @@ const Hero = () => {
             <motion.h1
               className="hero-title font-hero text-[clamp(3rem,8vw,6rem)] font-black tracking-[-0.02em] mb-6"
               style={{
-                textShadow: "0 0 20px rgba(0, 255, 133, 0.5)",
-                animation: "titlePulse 3s ease-in-out infinite",
+                textShadow: '0 0 20px rgba(0, 255, 133, 0.5)',
+                animation: 'titlePulse 3s ease-in-out infinite',
               }}
             >
               ABHISHEK SIROHI
@@ -56,8 +56,8 @@ const Hero = () => {
             Pioneering the future of cloud security with
             <span className="text-accent-primary"> JanusGraph </span>
             and
-            <span className="text-accent-primary"> distributed systems</span>.
-            Currently leading innovation at
+            <span className="text-accent-primary"> distributed systems</span>. Currently leading
+            innovation at
             <span className="text-accent-cyan"> Qualys</span>.
           </motion.p>
 

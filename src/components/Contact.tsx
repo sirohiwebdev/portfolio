@@ -1,6 +1,6 @@
-"use client";
+'use client';
 
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
 import {
   FaEnvelope,
   FaGithub,
@@ -8,7 +8,7 @@ import {
   FaMapMarkerAlt,
   FaMedium,
   FaPhone,
-} from "react-icons/fa";
+} from 'react-icons/fa';
 
 interface ContactInfo {
   email: string;
@@ -23,14 +23,14 @@ interface ContactInfo {
 }
 
 const contactInfo: ContactInfo = {
-  email: "abhisheksiroh19@gmail.com",
-  phone: ["+91 7880329858", "+91 9759781207"],
-  location: "Pune, Maharashtra, India",
+  email: 'abhisheksiroh19@gmail.com',
+  phone: ['+91 7880329858', '+91 9759781207'],
+  location: 'Pune, Maharashtra, India',
   links: {
-    linkedin: "https://www.linkedin.com/in/sirohiwebdev/",
-    github: "https://github.com/sirohiwebdev",
-    website: "https://abhisheksirohi.com",
-    medium: "https://journal.abhisheksirohi.com/",
+    linkedin: 'https://www.linkedin.com/in/sirohiwebdev/',
+    github: 'https://github.com/sirohiwebdev',
+    website: 'https://abhisheksirohi.com',
+    medium: 'https://journal.abhisheksirohi.com/',
   },
 };
 
@@ -51,8 +51,8 @@ const Contact = () => {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-accent-primary to-accent-secondary mx-auto mt-4"></div>
           <p className="text-text-secondary mt-6 max-w-2xl mx-auto">
-            Ready to collaborate on exciting projects or discuss technology
-            innovations? Let&apos;s connect!
+            Ready to collaborate on exciting projects or discuss technology innovations? Let&apos;s
+            connect!
           </p>
         </motion.div>
 
@@ -98,7 +98,7 @@ const Contact = () => {
                     {contactInfo.phone.map((number) => (
                       <a
                         key={number}
-                        href={`tel:${number.replace(/\s+/g, "")}`}
+                        href={`tel:${number.replace(/\s+/g, '')}`}
                         className="block text-accent-primary hover:text-accent-tertiary transition-colors"
                       >
                         {number}
@@ -114,9 +114,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="text-text-secondary mb-1">Location</p>
-                    <p className="text-accent-primary">
-                      {contactInfo.location}
-                    </p>
+                    <p className="text-accent-primary">{contactInfo.location}</p>
                   </div>
                 </div>
               </div>
@@ -169,10 +167,7 @@ const Contact = () => {
 
               <form className="space-y-6">
                 <div>
-                  <label
-                    htmlFor="name"
-                    className="block text-text-secondary mb-2"
-                  >
+                  <label htmlFor="name" className="block text-text-secondary mb-2">
                     Name
                   </label>
                   <input
@@ -185,10 +180,7 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <label
-                    htmlFor="email"
-                    className="block text-text-secondary mb-2"
-                  >
+                  <label htmlFor="email" className="block text-text-secondary mb-2">
                     Email
                   </label>
                   <input
@@ -201,10 +193,7 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <label
-                    htmlFor="subject"
-                    className="block text-text-secondary mb-2"
-                  >
+                  <label htmlFor="subject" className="block text-text-secondary mb-2">
                     Subject
                   </label>
                   <input
@@ -217,10 +206,7 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <label
-                    htmlFor="message"
-                    className="block text-text-secondary mb-2"
-                  >
+                  <label htmlFor="message" className="block text-text-secondary mb-2">
                     Message
                   </label>
                   <textarea
@@ -250,15 +236,13 @@ const Contact = () => {
             viewport={{ once: true }}
             className="mt-12 text-center"
           >
-            <h4 className="text-lg font-semibold text-accent-secondary mb-4">
-              Availability
-            </h4>
+            <h4 className="text-lg font-semibold text-accent-secondary mb-4">Availability</h4>
             <ul className="text-text-secondary space-y-2">
               <li>Open to consulting opportunities</li>
               <li>Available for technical discussions</li>
               <li>
-                Interested in collaborative projects in cloud security,
-                distributed systems, and graph technologies
+                Interested in collaborative projects in cloud security, distributed systems, and
+                graph technologies
               </li>
             </ul>
             <p className="mt-4 text-accent-primary font-medium">

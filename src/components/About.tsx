@@ -16,9 +16,7 @@ const About = () => {
         >
           {/* Section Header */}
           <div className="section-header text-center mb-16">
-            <h2 className="section-title text-4xl md:text-5xl font-orbitron font-bold">
-              ABOUT
-            </h2>
+            <h2 className="section-title text-4xl md:text-5xl font-orbitron font-bold">ABOUT</h2>
             <div className="title-underline w-24 h-1 bg-gradient-to-r from-accent-primary to-accent-secondary mx-auto mt-4"></div>
           </div>
 
@@ -32,29 +30,33 @@ const About = () => {
                 className="text-block space-y-6"
               >
                 <p className="lead-text text-xl font-medium">
-                  I&apos;m a passionate <span className="text-accent-primary">Lead Software Engineer</span> who 
-                  thrives on building scalable, enterprise-grade solutions that make a real-world impact.
+                  I&apos;m a passionate{' '}
+                  <span className="text-accent-primary">Lead Software Engineer</span> who thrives on
+                  building scalable, enterprise-grade solutions that make a real-world impact.
                 </p>
 
                 <p className="text-text-secondary">
-                  With over <span className="text-accent-gold">5+</span> years in the industry, I&apos;ve evolved from a 
-                  full-stack developer to a technical leader specializing in 
-                  <span className="text-accent-cyan"> cloud security</span>, 
-                  <span className="text-accent-cyan"> distributed systems</span>, and 
+                  With over <span className="text-accent-gold">5+</span> years in the industry,
+                  I&apos;ve evolved from a full-stack developer to a technical leader specializing
+                  in
+                  <span className="text-accent-cyan"> cloud security</span>,
+                  <span className="text-accent-cyan"> distributed systems</span>, and
                   <span className="text-accent-cyan"> graph database technologies</span>.
                 </p>
 
                 <p className="text-text-secondary">
-                  Currently, I lead the <span className="text-accent-primary">graph development team at Qualys</span>, 
-                  where I&apos;m spearheading the development of the company&apos;s first 
-                  <span className="text-accent-secondary"> Graph DB (JanusGraph)</span> based inventory collection 
-                  and rule-evaluation engine.
+                  Currently, I lead the{' '}
+                  <span className="text-accent-primary">graph development team at Qualys</span>,
+                  where I&apos;m spearheading the development of the company&apos;s first
+                  <span className="text-accent-secondary"> Graph DB (JanusGraph)</span> based
+                  inventory collection and rule-evaluation engine.
                 </p>
 
                 <p className="text-text-secondary">
-                  When I&apos;m not coding, you&apos;ll find me on the football field, exploring new technologies, 
-                  or learning about business and entrepreneurship. I&apos;m always open to collaborating on exciting 
-                  projects and connecting with fellow tech enthusiasts.
+                  When I&apos;m not coding, you&apos;ll find me on the football field, exploring new
+                  technologies, or learning about business and entrepreneurship. I&apos;m always
+                  open to collaborating on exciting projects and connecting with fellow tech
+                  enthusiasts.
                 </p>
               </motion.div>
             </div>
@@ -89,8 +91,15 @@ const About = () => {
                     viewport={{ once: true }}
                     className="stat-item text-center"
                   >
-                    <span className="stat-number text-3xl font-bold text-accent-primary" data-count="5">5</span>
-                    <span className="stat-label block text-sm text-text-secondary">Years Experience</span>
+                    <span
+                      className="stat-number text-3xl font-bold text-accent-primary"
+                      data-count="5"
+                    >
+                      5
+                    </span>
+                    <span className="stat-label block text-sm text-text-secondary">
+                      Years Experience
+                    </span>
                   </motion.div>
 
                   <motion.div
@@ -100,8 +109,15 @@ const About = () => {
                     viewport={{ once: true }}
                     className="stat-item text-center"
                   >
-                    <span className="stat-number text-3xl font-bold text-accent-primary" data-count="50">50</span>
-                    <span className="stat-label block text-sm text-text-secondary">Projects Completed</span>
+                    <span
+                      className="stat-number text-3xl font-bold text-accent-primary"
+                      data-count="50"
+                    >
+                      50
+                    </span>
+                    <span className="stat-label block text-sm text-text-secondary">
+                      Projects Completed
+                    </span>
                   </motion.div>
 
                   <motion.div
@@ -111,8 +127,15 @@ const About = () => {
                     viewport={{ once: true }}
                     className="stat-item text-center"
                   >
-                    <span className="stat-number text-3xl font-bold text-accent-primary" data-count="15">15</span>
-                    <span className="stat-label block text-sm text-text-secondary">Technologies Mastered</span>
+                    <span
+                      className="stat-number text-3xl font-bold text-accent-primary"
+                      data-count="15"
+                    >
+                      15
+                    </span>
+                    <span className="stat-label block text-sm text-text-secondary">
+                      Technologies Mastered
+                    </span>
                   </motion.div>
                 </div>
               </motion.div>

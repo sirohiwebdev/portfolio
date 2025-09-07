@@ -10,31 +10,31 @@ interface Achievement {
 
 const achievements: Record<string, Achievement> = {
   professional: {
-    title: "Professional Achievements",
+    title: 'Professional Achievements',
     items: [
-      "Released the first-ever Graph DB based inventory system at Qualys, processing billions of cloud assets",
-      "Led a team of 5+ engineers in developing cutting-edge cloud security solutions",
-      "Improved system performance metrics by 40-60% across multiple projects",
-      "Recognized for technical leadership and innovation in cloud security domain"
-    ]
+      'Released the first-ever Graph DB based inventory system at Qualys, processing billions of cloud assets',
+      'Led a team of 5+ engineers in developing cutting-edge cloud security solutions',
+      'Improved system performance metrics by 40-60% across multiple projects',
+      'Recognized for technical leadership and innovation in cloud security domain',
+    ],
   },
   academic: {
-    title: "Academic & Personal Achievements",
+    title: 'Academic & Personal Achievements',
     items: [
-      "Awarded \"Most Dynamic Student\" in college for leadership and technical contributions",
-      "Scored perfect CGPA of 10/10 in 10th board examinations",
-      "Won Inter-college Football Tournament consecutively in 2019 and 2020",
-      "Led technical teams and events as Assistant Coordinator at Unnat Technical Club"
-    ]
+      'Awarded "Most Dynamic Student" in college for leadership and technical contributions',
+      'Scored perfect CGPA of 10/10 in 10th board examinations',
+      'Won Inter-college Football Tournament consecutively in 2019 and 2020',
+      'Led technical teams and events as Assistant Coordinator at Unnat Technical Club',
+    ],
   },
   leadership: {
-    title: "Leadership Roles",
+    title: 'Leadership Roles',
     items: [
-      "Assistant Coordinator - Unnat Technical Club, RECK (Jan 2018 - Jun 2020)",
-      "Technical Secretary - Abhyutthan 2018 (Annual Techno-cultural fest)",
-      "Team Captain - College Football Team (2019-2020)"
-    ]
-  }
+      'Assistant Coordinator - Unnat Technical Club, RECK (Jan 2018 - Jun 2020)',
+      'Technical Secretary - Abhyutthan 2018 (Annual Techno-cultural fest)',
+      'Team Captain - College Football Team (2019-2020)',
+    ],
+  },
 };
 
 const Achievements = () => {
@@ -98,9 +98,7 @@ const Achievements = () => {
           >
             <div className="flex items-center gap-4 mb-6">
               <FaAward className="text-4xl text-accent-cyan" />
-              <h3 className="text-2xl font-orbitron font-semibold text-accent-primary">
-                Academic
-              </h3>
+              <h3 className="text-2xl font-orbitron font-semibold text-accent-primary">Academic</h3>
             </div>
             <ul className="space-y-4">
               {achievements.academic.items.map((item, index) => (

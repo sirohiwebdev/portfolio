@@ -14,49 +14,64 @@ interface SkillSection {
 
 const skills: Record<string, SkillSection> = {
   core: {
-    title: "Core Technologies",
+    title: 'Core Technologies',
     items: [
-      { category: "Languages", skills: ["JavaScript", "TypeScript", "Java", "Python", "SQL"] },
-      { category: "Frontend", skills: ["ReactJS", "NextJS", "HTML5", "CSS3", "Bootstrap"] },
-      { category: "Backend", skills: ["Node.js", "Express.js", "Spring Boot", "RESTful APIs"] },
-      { category: "Databases", skills: ["JanusGraph", "MongoDB", "DynamoDB", "Oracle", "Redis", "MySQL"] }
-    ]
+      { category: 'Languages', skills: ['JavaScript', 'TypeScript', 'Java', 'Python', 'SQL'] },
+      { category: 'Frontend', skills: ['ReactJS', 'NextJS', 'HTML5', 'CSS3', 'Bootstrap'] },
+      { category: 'Backend', skills: ['Node.js', 'Express.js', 'Spring Boot', 'RESTful APIs'] },
+      {
+        category: 'Databases',
+        skills: ['JanusGraph', 'MongoDB', 'DynamoDB', 'Oracle', 'Redis', 'MySQL'],
+      },
+    ],
   },
   cloud: {
-    title: "Cloud & DevOps",
+    title: 'Cloud & DevOps',
     items: [
-      { category: "Cloud Platforms", skills: ["AWS (EC2, S3, Lambda, CloudFormation)", "GCP", "Azure"] },
-      { category: "Containerization", skills: ["Docker", "Kubernetes", "Container Orchestration"] },
-      { category: "CI/CD", skills: ["Jenkins", "GitHub Actions", "DevOps Pipelines"] },
-      { category: "Infrastructure", skills: ["Terraform", "Serverless Architecture"] },
-      { category: "Monitoring", skills: ["Grafana", "Prometheus", "Elasticsearch"] }
-    ]
+      {
+        category: 'Cloud Platforms',
+        skills: ['AWS (EC2, S3, Lambda, CloudFormation)', 'GCP', 'Azure'],
+      },
+      { category: 'Containerization', skills: ['Docker', 'Kubernetes', 'Container Orchestration'] },
+      { category: 'CI/CD', skills: ['Jenkins', 'GitHub Actions', 'DevOps Pipelines'] },
+      { category: 'Infrastructure', skills: ['Terraform', 'Serverless Architecture'] },
+      { category: 'Monitoring', skills: ['Grafana', 'Prometheus', 'Elasticsearch'] },
+    ],
   },
   specialized: {
-    title: "Specialized Technologies",
+    title: 'Specialized Technologies',
     items: [
-      { category: "Graph Databases", skills: ["JanusGraph", "Gremlin Query Language", "Apache TinkerPop"] },
-      { category: "Message Streaming", skills: ["Apache Kafka", "Event-Driven Architecture"] },
-      { category: "Low-Code Platforms", skills: ["Node-RED", "Visual Programming"] },
-      { category: "Security", skills: ["Cloud Security", "Vulnerability Management", "Compliance"] }
-    ]
+      {
+        category: 'Graph Databases',
+        skills: ['JanusGraph', 'Gremlin Query Language', 'Apache TinkerPop'],
+      },
+      { category: 'Message Streaming', skills: ['Apache Kafka', 'Event-Driven Architecture'] },
+      { category: 'Low-Code Platforms', skills: ['Node-RED', 'Visual Programming'] },
+      {
+        category: 'Security',
+        skills: ['Cloud Security', 'Vulnerability Management', 'Compliance'],
+      },
+    ],
   },
   dataAndAnalytics: {
-    title: "Data & Analytics",
+    title: 'Data & Analytics',
     items: [
-      { category: "Data Science", skills: ["Basic Machine Learning", "Data Analysis"] },
-      { category: "AI/ML", skills: ["Prompt Engineering", "AI-Driven Development", "MCP Servers"] },
-      { category: "Big Data", skills: ["Data Pipeline Architecture", "ETL Processes"] }
-    ]
+      { category: 'Data Science', skills: ['Basic Machine Learning', 'Data Analysis'] },
+      { category: 'AI/ML', skills: ['Prompt Engineering', 'AI-Driven Development', 'MCP Servers'] },
+      { category: 'Big Data', skills: ['Data Pipeline Architecture', 'ETL Processes'] },
+    ],
   },
   practices: {
-    title: "Development Practices",
+    title: 'Development Practices',
     items: [
-      { category: "Methodologies", skills: ["Agile", "Scrum", "Test-Driven Development"] },
-      { category: "Architecture", skills: ["System Design", "Microservices", "Distributed Systems"] },
-      { category: "Version Control", skills: ["Git", "GitHub", "Code Review Best Practices"] }
-    ]
-  }
+      { category: 'Methodologies', skills: ['Agile', 'Scrum', 'Test-Driven Development'] },
+      {
+        category: 'Architecture',
+        skills: ['System Design', 'Microservices', 'Distributed Systems'],
+      },
+      { category: 'Version Control', skills: ['Git', 'GitHub', 'Code Review Best Practices'] },
+    ],
+  },
 };
 
 const Skills = () => {

@@ -1,32 +1,32 @@
-"use client";
+'use client';
 
-import Link from "next/link";
-import { FaGithub, FaLinkedin, FaMedium } from "react-icons/fa";
+import Link from 'next/link';
+import { FaGithub, FaLinkedin, FaMedium } from 'react-icons/fa';
 
 const navigation = {
   sections: [
-    { name: "About", href: "#about" },
-    { name: "Skills", href: "#skills" },
-    { name: "Projects", href: "#projects" },
-    { name: "Education", href: "#education" },
-    { name: "Achievements", href: "#achievements" },
-    { name: "Experience", href: "#experience" },
-    { name: "Contact", href: "#contact" },
+    { name: 'About', href: '#about' },
+    { name: 'Skills', href: '#skills' },
+    { name: 'Projects', href: '#projects' },
+    { name: 'Education', href: '#education' },
+    { name: 'Achievements', href: '#achievements' },
+    { name: 'Experience', href: '#experience' },
+    { name: 'Contact', href: '#contact' },
   ],
   social: [
     {
-      name: "LinkedIn",
-      href: "https://www.linkedin.com/in/sirohiwebdev/",
+      name: 'LinkedIn',
+      href: 'https://www.linkedin.com/in/sirohiwebdev/',
       icon: FaLinkedin,
     },
     {
-      name: "GitHub",
-      href: "https://github.com/sirohiwebdev",
+      name: 'GitHub',
+      href: 'https://github.com/sirohiwebdev',
       icon: FaGithub,
     },
     {
-      name: "Medium",
-      href: "https://journal.abhisheksirohi.com/",
+      name: 'Medium',
+      href: 'https://journal.abhisheksirohi.com/',
       icon: FaMedium,
     },
   ],
@@ -44,8 +44,8 @@ const Footer = () => {
               Abhishek Sirohi
             </h3>
             <p className="text-text-secondary mb-6 max-w-md">
-              Lead Software Engineer specializing in cloud security, distributed
-              systems, and graph database technologies.
+              Lead Software Engineer specializing in cloud security, distributed systems, and graph
+              database technologies.
             </p>
             <div className="flex space-x-4">
               {navigation.social.map((item) => (
@@ -65,9 +65,7 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-lg font-semibold text-accent-secondary mb-4">
-              Quick Links
-            </h4>
+            <h4 className="text-lg font-semibold text-accent-secondary mb-4">Quick Links</h4>
             <ul className="space-y-3">
               {navigation.sections.map((item) => (
                 <li key={item.name}>
@@ -84,9 +82,7 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h4 className="text-lg font-semibold text-accent-secondary mb-4">
-              Contact
-            </h4>
+            <h4 className="text-lg font-semibold text-accent-secondary mb-4">Contact</h4>
             <ul className="space-y-3 text-text-secondary">
               <li>
                 <a
@@ -97,10 +93,7 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a
-                  href="tel:+917880329858"
-                  className="hover:text-accent-primary transition-colors"
-                >
+                <a href="tel:+917880329858" className="hover:text-accent-primary transition-colors">
                   +91 7880329858
                 </a>
               </li>
@@ -112,15 +105,14 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="pt-8 text-center text-text-secondary">
           <p className="text-sm">
-            &copy; {new Date().getFullYear()} Abhishek Sirohi. All rights
-            reserved.
+            &copy; {new Date().getFullYear()} Abhishek Sirohi. All rights reserved.
           </p>
         </div>
       </div>
 
       {/* Scroll to Top Button */}
       <button
-        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
         className="fixed bottom-8 right-8 w-12 h-12 rounded-lg bg-accent-primary text-bg-primary flex items-center justify-center hover:bg-accent-tertiary transition-colors focus:outline-none focus:ring-2 focus:ring-accent-primary focus:ring-offset-2 focus:ring-offset-bg-tertiary"
       >
         <svg

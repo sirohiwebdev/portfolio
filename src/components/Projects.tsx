@@ -20,71 +20,75 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: "Cloud Graph Inventory Management Platform",
-    role: "Lead Developer & Architect",
-    description: "Revolutionary distributed low-code/no-code platform that transforms how enterprises manage and visualize their cloud security posture. Built using Node-RED for visual programming, the system powers inventory data ingestion into a JanusGraph-backed system.",
+    title: 'Cloud Graph Inventory Management Platform',
+    role: 'Lead Developer & Architect',
+    description:
+      'Revolutionary distributed low-code/no-code platform that transforms how enterprises manage and visualize their cloud security posture. Built using Node-RED for visual programming, the system powers inventory data ingestion into a JanusGraph-backed system.',
     keyFeatures: [
-      "Real-time inventory collection from AWS, GCP, and Azure cloud environments",
-      "Attack path visualization using advanced graph algorithms and security policies",
-      "Natural language querying through MCP (Model Context Protocol) servers",
-      "Automated security rule evaluation across complex cloud infrastructures"
+      'Real-time inventory collection from AWS, GCP, and Azure cloud environments',
+      'Attack path visualization using advanced graph algorithms and security policies',
+      'Natural language querying through MCP (Model Context Protocol) servers',
+      'Automated security rule evaluation across complex cloud infrastructures',
     ],
     technologies: [
-      { name: "Node.js", category: "Backend" },
-      { name: "Express", category: "Backend" },
-      { name: "Node-RED", category: "Platform" },
-      { name: "Kubernetes", category: "Infrastructure" },
-      { name: "Elasticsearch", category: "Database" },
-      { name: "JanusGraph", category: "Database" },
-      { name: "Oracle DB", category: "Database" },
-      { name: "Apache Kafka", category: "Messaging" },
-      { name: "Redis", category: "Cache" },
-      { name: "AWS", category: "Cloud" },
-      { name: "GCP", category: "Cloud" }
+      { name: 'Node.js', category: 'Backend' },
+      { name: 'Express', category: 'Backend' },
+      { name: 'Node-RED', category: 'Platform' },
+      { name: 'Kubernetes', category: 'Infrastructure' },
+      { name: 'Elasticsearch', category: 'Database' },
+      { name: 'JanusGraph', category: 'Database' },
+      { name: 'Oracle DB', category: 'Database' },
+      { name: 'Apache Kafka', category: 'Messaging' },
+      { name: 'Redis', category: 'Cache' },
+      { name: 'AWS', category: 'Cloud' },
+      { name: 'GCP', category: 'Cloud' },
     ],
-    impact: "Enabled security teams to identify and remediate attack paths 10x faster than traditional methods"
+    impact:
+      'Enabled security teams to identify and remediate attack paths 10x faster than traditional methods',
   },
   {
-    title: "QFlow - Distributed Workflow Orchestration Engine",
-    role: "Senior Developer",
-    description: "Enterprise-grade workflow orchestration platform that allows users to create and execute complex cloud management workflows through an intuitive visual interface.",
+    title: 'QFlow - Distributed Workflow Orchestration Engine',
+    role: 'Senior Developer',
+    description:
+      'Enterprise-grade workflow orchestration platform that allows users to create and execute complex cloud management workflows through an intuitive visual interface.',
     keyFeatures: [
-      "Drag-and-drop workflow builder for creating custom security automations",
-      "Event-driven architecture supporting real-time cloud resource monitoring",
-      "Integration capabilities with major cloud providers and ITSM tools",
-      "Automated remediation workflows for vulnerability management"
+      'Drag-and-drop workflow builder for creating custom security automations',
+      'Event-driven architecture supporting real-time cloud resource monitoring',
+      'Integration capabilities with major cloud providers and ITSM tools',
+      'Automated remediation workflows for vulnerability management',
     ],
     technologies: [
-      { name: "Node.js", category: "Backend" },
-      { name: "React", category: "Frontend" },
-      { name: "Kafka", category: "Messaging" },
-      { name: "Redis", category: "Cache" },
-      { name: "AWS Lambda", category: "Cloud" },
-      { name: "Docker", category: "Infrastructure" },
-      { name: "Kubernetes", category: "Infrastructure" }
+      { name: 'Node.js', category: 'Backend' },
+      { name: 'React', category: 'Frontend' },
+      { name: 'Kafka', category: 'Messaging' },
+      { name: 'Redis', category: 'Cache' },
+      { name: 'AWS Lambda', category: 'Cloud' },
+      { name: 'Docker', category: 'Infrastructure' },
+      { name: 'Kubernetes', category: 'Infrastructure' },
     ],
-    impact: "Reduced manual security operations overhead by 60% for enterprise customers"
+    impact: 'Reduced manual security operations overhead by 60% for enterprise customers',
   },
   {
-    title: "Gurukul Vishwabharti School Website",
-    role: "Freelance Full-Stack Developer",
-    description: "Comprehensive educational website for a CBSE-affiliated school in Haryana, featuring modern design and administrative functionality.",
+    title: 'Gurukul Vishwabharti School Website',
+    role: 'Freelance Full-Stack Developer',
+    description:
+      'Comprehensive educational website for a CBSE-affiliated school in Haryana, featuring modern design and administrative functionality.',
     keyFeatures: [
-      "Responsive design optimized for all devices",
-      "Content management system for news, admissions, and academic information",
-      "Student information portal with secure authentication",
-      "Administrative dashboard for school management"
+      'Responsive design optimized for all devices',
+      'Content management system for news, admissions, and academic information',
+      'Student information portal with secure authentication',
+      'Administrative dashboard for school management',
     ],
     technologies: [
-      { name: "HTML5", category: "Frontend" },
-      { name: "CSS3", category: "Frontend" },
-      { name: "JavaScript", category: "Frontend" },
-      { name: "PHP/Node.js", category: "Backend" },
-      { name: "MySQL", category: "Database" }
+      { name: 'HTML5', category: 'Frontend' },
+      { name: 'CSS3', category: 'Frontend' },
+      { name: 'JavaScript', category: 'Frontend' },
+      { name: 'PHP/Node.js', category: 'Backend' },
+      { name: 'MySQL', category: 'Database' },
     ],
-    impact: "",
-    link: "https://www.gurukulvishwabharti.com"
-  }
+    impact: '',
+    link: 'https://www.gurukulvishwabharti.com',
+  },
 ];
 
 const Projects = () => {
@@ -123,8 +127,10 @@ const Projects = () => {
                   </h3>
                   <div className="text-accent-secondary mb-4">{project.role}</div>
                   <p className="text-text-secondary mb-6">{project.description}</p>
-                  
-                  <h4 className="text-lg font-semibold text-accent-secondary mb-4">Key Features:</h4>
+
+                  <h4 className="text-lg font-semibold text-accent-secondary mb-4">
+                    Key Features:
+                  </h4>
                   <ul className="list-disc list-inside space-y-2 text-text-secondary mb-6">
                     {project.keyFeatures.map((feature) => (
                       <li key={feature}>{feature}</li>
@@ -139,22 +145,33 @@ const Projects = () => {
                   )}
 
                   {project.link && (
-                    <Link 
-                      href={project.link} 
-                      target="_blank" 
+                    <Link
+                      href={project.link}
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center text-accent-primary hover:text-accent-tertiary transition-colors"
                     >
                       Visit Website
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
-                        <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="h-5 w-5 ml-2"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                          clipRule="evenodd"
+                        />
                       </svg>
                     </Link>
                   )}
                 </div>
 
                 <div className="lg:w-1/3">
-                  <h4 className="text-lg font-semibold text-accent-secondary mb-4">Technologies:</h4>
+                  <h4 className="text-lg font-semibold text-accent-secondary mb-4">
+                    Technologies:
+                  </h4>
                   <div className="flex flex-wrap gap-3">
                     {project.technologies.map((tech) => (
                       <span

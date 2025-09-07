@@ -15,19 +15,15 @@ const TypewriterText = ({ text, delay = 100, className = '' }: TypewriterTextPro
   useEffect(() => {
     if (currentIndex < text.length) {
       const timeout = setTimeout(() => {
-        setCurrentText(prev => prev + text[currentIndex]);
-        setCurrentIndex(prev => prev + 1);
+        setCurrentText((prev) => prev + text[currentIndex]);
+        setCurrentIndex((prev) => prev + 1);
       }, delay);
 
       return () => clearTimeout(timeout);
     }
   }, [currentIndex, delay, text]);
 
-  return (
-    <span className={`${className} typewriter`}>
-      {currentText}
-    </span>
-  );
+  return <span className={`${className} typewriter`}>{currentText}</span>;
 };
 
 export default TypewriterText;

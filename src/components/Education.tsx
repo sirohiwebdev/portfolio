@@ -16,32 +16,33 @@ interface Education {
 
 const educationData: Education[] = [
   {
-    degree: "Bachelor of Technology - Computer Science & Engineering",
-    institution: "Rajkiya Engineering College Kannauj",
-    location: "Kannauj, Uttar Pradesh",
-    period: "August 2016 - June 2020",
+    degree: 'Bachelor of Technology - Computer Science & Engineering',
+    institution: 'Rajkiya Engineering College Kannauj',
+    location: 'Kannauj, Uttar Pradesh',
+    period: 'August 2016 - June 2020',
     details: {
-      grade: "CGPA: 7.2/10.0",
+      grade: 'CGPA: 7.2/10.0',
       coursework: [
-        "Data Structures & Algorithms",
-        "Database Management Systems",
-        "Computer Networks",
-        "Software Engineering",
-        "Operating Systems"
+        'Data Structures & Algorithms',
+        'Database Management Systems',
+        'Computer Networks',
+        'Software Engineering',
+        'Operating Systems',
       ],
-      projects: "Multiple academic projects involving web development, database design, and system programming"
-    }
+      projects:
+        'Multiple academic projects involving web development, database design, and system programming',
+    },
   },
   {
-    degree: "Higher Secondary (10+2) - Science",
-    institution: "Meerut Public School",
-    location: "Meerut, Uttar Pradesh",
-    period: "April 2014 - March 2015",
+    degree: 'Higher Secondary (10+2) - Science',
+    institution: 'Meerut Public School',
+    location: 'Meerut, Uttar Pradesh',
+    period: 'April 2014 - March 2015',
     details: {
-      grade: "Percentage: 91.3%",
-      coursework: ["Physics", "Chemistry", "Mathematics", "English"]
-    }
-  }
+      grade: 'Percentage: 91.3%',
+      coursework: ['Physics', 'Chemistry', 'Mathematics', 'English'],
+    },
+  },
 ];
 
 const Education = () => {
@@ -56,9 +57,7 @@ const Education = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="section-title text-4xl md:text-5xl font-orbitron font-bold">
-            EDUCATION
-          </h2>
+          <h2 className="section-title text-4xl md:text-5xl font-orbitron font-bold">EDUCATION</h2>
           <div className="w-24 h-1 bg-gradient-to-r from-accent-primary to-accent-secondary mx-auto mt-4"></div>
         </motion.div>
 
@@ -86,14 +85,10 @@ const Education = () => {
                 <div className="text-accent-secondary mb-4">
                   {edu.institution} | {edu.period}
                 </div>
-                <div className="text-text-secondary mb-2">
-                  {edu.location}
-                </div>
+                <div className="text-text-secondary mb-2">{edu.location}</div>
 
                 {edu.details.grade && (
-                  <div className="text-accent-gold font-semibold mb-4">
-                    {edu.details.grade}
-                  </div>
+                  <div className="text-accent-gold font-semibold mb-4">{edu.details.grade}</div>
                 )}
 
                 {edu.details.coursework && (
@@ -116,12 +111,8 @@ const Education = () => {
 
                 {edu.details.projects && (
                   <div>
-                    <h4 className="text-lg font-semibold text-accent-secondary mb-2">
-                      Projects:
-                    </h4>
-                    <p className="text-text-secondary">
-                      {edu.details.projects}
-                    </p>
+                    <h4 className="text-lg font-semibold text-accent-secondary mb-2">Projects:</h4>
+                    <p className="text-text-secondary">{edu.details.projects}</p>
                   </div>
                 )}
               </div>
